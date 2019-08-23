@@ -116,6 +116,10 @@ public class Args
         return IntegerArgumentMarshaler.getValue(marshalers.get(arg));
     }
     
+    public double getDouble(char arg){
+    	return DoubleArgumentMarshaler.getDouble(marshalers.get(arg));
+    }
+    
     public String[] getStringArray(char arg){
         return StringArrayArgumentMarshaler.getValue(marshalers.get(arg));
     }
